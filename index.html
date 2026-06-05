@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Leyland - Global Leader in Commercial Mobility</title>
+    <meta name="description" content="Ashok Leyland, flagship of the Hinduja Group, is India's second-largest commercial vehicle manufacturer and the world's fourth-largest bus manufacturer. 75+ years of innovation across 50+ countries.">
+    <meta name="keywords" content="Ashok Leyland, commercial vehicles, trucks, buses, electric vehicles, Switch Mobility, Hinduja Group, automotive, manufacturing">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============ PARTICLES ============ -->
+    <div class="particles" aria-hidden="true">
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+        <div class="particle p4"></div>
+        <div class="particle p5"></div>
+        <div class="particle p6"></div>
+        <div class="particle p7"></div>
+        <div class="particle p8"></div>
+    </div>
+
+    <!-- ============ 1. NAVBAR ============ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="Ashok Leyland Home">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                    <rect width="36" height="36" rx="6" fill="#0d2c54"/>
+                    <path d="M8 26V10h6l4 8 4-8h6v16h-5V17l-5 9-5-9v9H8z" fill="#fff"/>
+                </svg>
+                <span class="logo-text">Ashok Leyland</span>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="#about" role="menuitem" class="nav-link">About</a></li>
+                <li role="none"><a href="#services" role="menuitem" class="nav-link">Products</a></li>
+                <li role="none"><a href="#global" role="menuitem" class="nav-link">Global</a></li>
+                <li role="none"><a href="#timeline" role="menuitem" class="nav-link">Milestones</a></li>
+                <li role="none"><a href="#innovation" role="menuitem" class="nav-link">Innovation</a></li>
+                <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary nav-cta">Contact Sales</a>
+        </div>
+    </nav>
+
+    <!-- ============ 2. HERO ============ -->
+    <section class="hero" id="hero" aria-label="Hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=80" alt="Truck on highway at night" loading="eager">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-tagline" id="heroTagline">75+ Years of Engineering Excellence</p>
+            <h1 class="hero-title">Engineering the <span class="gradient-text">Future</span> of<br>Global <span class="gradient-text">Mobility</span></h1>
+            <p class="hero-subtitle">From the highways of India to the markets of Africa, the Middle East, and beyond — Ashok Leyland moves the world with reliable, innovative, and sustainable commercial vehicles trusted across 50+ nations.</p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary btn-large hero-btn-primary">Explore Our Products</a>
+                <a href="#innovation" class="btn btn-secondary btn-large">Discover Innovation</a>
+            </div>
+            <div class="hero-trust" id="heroTrust">
+                <div class="trust-item" data-count="50" data-suffix="+">
+                    <span class="trust-number"><span class="count-target">0</span><span class="count-suffix">+</span></span>
+                    <span class="trust-label">Countries Served</span>
+                </div>
+                <div class="trust-item" data-count="220" data-suffix="K+">
+                    <span class="trust-number"><span class="count-target">0</span><span class="count-suffix">K+</span></span>
+                    <span class="trust-label">Vehicles Sold (FY26)</span>
+                </div>
+                <div class="trust-item" data-count="56947" data-suffix="Cr">
+                    <span class="trust-number"><span class="count-target">0</span><span class="count-suffix">Cr</span></span>
+                    <span class="trust-label">Consolidated Revenue</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">#4</span>
+                    <span class="trust-label">Global Bus Manufacturer</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <span class="scroll-text">Scroll</span>
+            <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+                <rect x="1" y="1" width="14" height="22" rx="7" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none"/>
+                <circle cx="8" cy="8" r="2.5" fill="rgba(255,255,255,0.6)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============ 3. SERVICES / PRODUCTS ============ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Portfolio</span>
+                <div class="section-title-wrapper">
+                    <h2 class="section-title" id="services-title">World-Class Commercial Vehicles</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <p class="section-desc">From rugged defense trucks to zero-emission electric buses — our diversified portfolio serves every mobility need across road transport, logistics, defense, and public transit.</p>
+            </div>
+            <div class="cards-grid stagger-children">
+                <article class="card card-flip">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <path d="M8 30V14l6-4h12l6 4v16h-4v-2H12v2H8z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                            <circle cx="14" cy="28" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="26" cy="28" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M12 18h16v6H12z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">M&HCV Trucks</h3>
+                    <p class="card-desc">Medium and Heavy Commercial Vehicles including the HIPPO tractor-trailers, TAURUS tippers, and Modular Advanced Vehicle (MAV) series with industry-best torque, payload, and Total Cost of Ownership.</p>
+                    <div class="card-corner"></div>
+                </article>
+                <article class="card card-flip">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <rect x="6" y="12" width="28" height="16" rx="2" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                            <path d="M6 20h28" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="12" cy="30" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="28" cy="30" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M24 12v-3H16v3" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Light Commercial Vehicles</h3>
+                    <p class="card-desc">The iconic DOST and Bada DOST series dominate the Indian LCV segment, renowned for class-leading payload capacities, superior fuel efficiency, and unmatched urban agility — 74,322 units sold in FY26.</p>
+                    <div class="card-corner"></div>
+                </article>
+                <article class="card card-flip">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <path d="M8 32V16l4-2 8-6 8 6 4 2v16H8z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                            <path d="M14 20h12l-2 8H16l-2-8z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M20 8v4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Defence & Special Vehicles</h3>
+                    <p class="card-desc">India's largest supplier of logistics vehicles to the Armed Forces. The legendary Stallion all-terrain platform, now expanding globally through strategic partnerships including an MoU with Indonesia's PT Pindad.</p>
+                    <div class="card-corner"></div>
+                </article>
+                <article class="card card-flip">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <rect x="6" y="14" width="28" height="16" rx="4" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                            <path d="M16 22l3 3 5-6" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                            <path d="M10 14V8h20v6" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Electric Mobility (Switch)</h3>
+                    <p class="card-desc">Switch Mobility — our pure EV subsidiary — achieved net profitability in FY26, delivering 1,530 electric buses (238% YoY growth) and 1,606 electric LCVs. Over 150 million green kilometers logged globally.</p>
+                    <div class="card-corner"></div>
+                </article>
+                <article class="card card-flip">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                            <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                            <path d="M20 8v6m0 12v6M8 20h6m12 0h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Global Parts & Service</h3>
+                    <p class="card-desc">An extensive network of 1,000+ touchpoints across 50+ countries, 10 assembly facilities worldwide, and a world-class supply chain ensuring maximum vehicle uptime and operational efficiency.</p>
+                    <div class="card-corner"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 4. WHY CHOOSE US ============ -->
+    <section class="section section-alt" id="why-us" aria-labelledby="why-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Ashok Leyland</span>
+                <div class="section-title-wrapper">
+                    <h2 class="section-title" id="why-title">Built on <span class="gradient-text-alt">Trust</span>, Driven by <span class="gradient-text-alt">Innovation</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+                <p class="section-desc">For over seven decades, Ashok Leyland has been the backbone of global transportation — delivering reliability, performance, and cutting-edge technology to customers across the world.</p>
+            </div>
+            <div class="benefits-grid stagger-children">
+                <div class="benefit-card benefit-underline">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <path d="M16 4L4 12v8l12 8 12-8v-8L16 4z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M16 16l-6-4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">75+ Years of Heritage</h3>
+                    <p class="benefit-desc">Founded in 1948, we have continuously shaped the commercial vehicle landscape — from India's first multi-axle truck to pioneering CNG and hybrid electric technology.</p>
+                </div>
+                <div class="benefit-card benefit-underline">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M16 10v6l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M26 6l2 2" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Unmatched Scale & Reach</h3>
+                    <p class="benefit-desc">1,000+ service touchpoints, 9 manufacturing plants, 10 global assembly facilities, and operations spanning 50+ countries across Asia, Africa, the Middle East, and Europe.</p>
+                </div>
+                <div class="benefit-card benefit-underline">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <path d="M6 26V10l4-2 6-4 6 4 4 2v16H6z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M16 4v8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 14l6 4 6-4" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Financial Strength</h3>
+                    <p class="benefit-desc">Consolidated revenue of ₹56,947 Crore and PAT of ₹3,471 Crore in FY26. A commanding 30.8% market share in domestic MHCV segment with robust dividend payout of ₹3.50 per share.</p>
+                </div>
+                <div class="benefit-card benefit-underline">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <path d="M16 2v28" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4 16h24" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 16l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Future-Ready Innovation</h3>
+                    <p class="benefit-desc">₹5,000 Crore investment in next-gen battery technology, strategic partnership with CALB Group (China), and Switch Mobility's rapid EV scaling position us at the forefront of zero-emission mobility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 5. PROJECTS / PORTFOLIO ============ -->
+    <section class="section" id="global" aria-labelledby="projects-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Global Impact</span>
+                <div class="section-title-wrapper">
+                    <h2 class="section-title" id="projects-title">Delivering <span class="gradient-text">Excellence</span> Worldwide</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <p class="section-desc">From landmark electric bus deployments to cutting-edge defence collaborations — our projects move people, goods, and nations forward.</p>
+            </div>
+            <div class="projects-grid stagger-children">
+                <article class="project-card project-image-zoom">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="City bus public transport" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Electric Mobility</span>
+                        <h3 class="project-title">Switch Mobility Electric Buses</h3>
+                        <p class="project-desc">Delivered 1,530 electric buses in FY26 — 238% YoY growth. Double-decker electric buses deployed in Delhi and Tamil Nadu Tourism. 150M+ green kilometers and net profitability achieved.</p>
+                    </div>
+                </article>
+                <article class="project-card project-image-zoom">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80" alt="Industrial manufacturing facility" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Battery Technology</span>
+                        <h3 class="project-title">₹5,000 Cr Battery Ecosystem</h3>
+                        <p class="project-desc">Strategic partnership with CALB Group (China) to localize next-generation battery technology. Greenfield facility in Pillaipakkam, Chennai with ₹400-500 Cr initial outlay for battery pack manufacturing.</p>
+                    </div>
+                </article>
+                <article class="project-card project-image-zoom">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai UAE skyline" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Global Manufacturing</span>
+                        <h3 class="project-title">Ras Al Khaimah Facility, UAE</h3>
+                        <p class="project-desc">Capacity of 6,000 buses annually serving the MENA region. Partner truck segment won 'LCV Truck of the Year' at the 2024 Truck & Fleet Awards. Key hub for Middle East, Africa, and CIS markets.</p>
+                    </div>
+                </article>
+                <article class="project-card project-image-zoom">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Industrial engineering technology" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Defence</span>
+                        <h3 class="project-title">Indonesia Defence Collaboration</h3>
+                        <p class="project-desc">Signed MoU with PT Pindad, Indonesia's state-owned defence enterprise, for advanced defence technology collaboration. Expanding the legendary Stallion platform's global footprint beyond India.</p>
+                    </div>
+                </article>
+                <article class="project-card project-image-zoom">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80" alt="Factory manufacturing plant" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Manufacturing</span>
+                        <h3 class="project-title">Green-Mobility Facility, Lucknow</h3>
+                        <p class="project-desc">New integrated manufacturing plant in Lucknow, Uttar Pradesh focused on green mobility solutions. Part of the 9 worldwide manufacturing plants powering Ashok Leyland's global supply chain.</p>
+                    </div>
+                </article>
+                <article class="project-card project-image-zoom">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Industrial warehouse logistics" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Sustainability</span>
+                        <h3 class="project-title">Record LCV Sales & Market Leadership</h3>
+                        <p class="project-desc">74,322 LCV units sold in FY26 (+11.5% YoY) — a record high. The DOST and Bada DOST series continue to dominate with superior payload, urban agility, and industry-leading fuel efficiency.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 6. ABOUT ============ -->
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">Our Story</span>
+                    <div class="section-title-wrapper">
+                        <h2 class="section-title" id="about-title">A Legacy of <span class="gradient-text-alt">Moving</span> Nations</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                    <p class="about-text">Incorporated in <strong>1948</strong> as Ashok Motors Limited, our journey began by assembling Austin cars in Ennore, Chennai. A strategic partnership with British Leyland transformed us into Ashok Leyland — a name that would become synonymous with commercial vehicle excellence in India and beyond.</p>
+                    <p class="about-text">As the flagship of the <strong>Hinduja Group</strong>, we have pioneered innovation for over 75 years: India's first 13-ton truck, first multi-axle vehicle, first CNG bus, and first hybrid electric vehicle. Today, we are the <strong>second-largest CV manufacturer in India</strong> and the <strong>fourth-largest bus manufacturer in the world</strong>.</p>
+                    <p class="about-text">Our philosophy — <em>"Koi Manzil Door Nahin"</em> (No Dream Too Far) — drives our commitment to engineering excellence, sustainability, and global mobility solutions.</p>
+
+                    <div class="about-quote">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <path d="M10 8C6 8 4 11 4 14v6h6v-6H8c0-2 1-4 4-4v-2zm14 0c-4 0-6 3-6 6v6h6v-6h-2c0-2 1-4 4-4v-2z" fill="#3498db" opacity="0.3"/>
+                        </svg>
+                        <blockquote>
+                            "Our strategic partnership with CALB is a significant step towards creating a localised battery supply chain in India to accelerate adoption of electric vehicles. A Global Centre of Excellence will be created to serve as a hub for research and development."
+                        </blockquote>
+                        <cite>— Shenu Agarwal, MD & CEO, Ashok Leyland</cite>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="about-stat" data-count="1948">
+                            <span class="about-stat-value"><span class="count-target">0</span></span>
+                            <span class="about-stat-label">Year Founded</span>
+                        </div>
+                        <div class="about-stat" data-count="50" data-suffix="+">
+                            <span class="about-stat-value"><span class="count-target">0</span><span class="count-suffix">+</span></span>
+                            <span class="about-stat-label">Countries</span>
+                        </div>
+                        <div class="about-stat" data-count="35000" data-suffix="+">
+                            <span class="about-stat-value"><span class="count-target">0</span><span class="count-suffix">+</span></span>
+                            <span class="about-stat-label">Employees</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-value">9</span>
+                            <span class="about-stat-label">Manufacturing Plants</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-placeholder">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                            <circle cx="60" cy="60" r="54" stroke="#0d2c54" stroke-width="3" fill="none"/>
+                            <path d="M60 6v108M6 60h108" stroke="#3498db" stroke-width="2" opacity="0.5"/>
+                            <circle cx="60" cy="60" r="18" stroke="#e74c3c" stroke-width="3" fill="none"/>
+                            <path d="M60 42v36M42 60h36" stroke="#0d2c54" stroke-width="2" opacity="0.4"/>
+                            <circle cx="60" cy="60" r="6" fill="#e74c3c" opacity="0.6"/>
+                        </svg>
+                        <p class="about-image-caption">Global Headquarters, Chennai, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 7. MILESTONES TIMELINE ============ -->
+    <section class="section" id="timeline" aria-labelledby="timeline-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Journey</span>
+                <div class="section-title-wrapper">
+                    <h2 class="section-title" id="timeline-title">75+ Years of <span class="gradient-text">Breaking</span> Barriers</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <p class="section-desc">From assembling cars in 1948 to pioneering electric mobility in 2026 — every milestone reflects our relentless pursuit of engineering excellence.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-items">
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-year">1948</span>
+                            <h3 class="timeline-title">The Beginning</h3>
+                            <p class="timeline-desc">Incorporated as Ashok Motors Limited in Chennai. Began assembling Austin cars, laying the foundation for India's automotive journey.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-year">1980</span>
+                            <h3 class="timeline-title">Trucking Revolution</h3>
+                            <p class="timeline-desc">Inaugurated Hosur plant. Launched India's first 13-ton truck 'Tusker' and first multi-axle truck 'Taurus' — redefining freight transport.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-year">1997</span>
+                            <h3 class="timeline-title">Green Pioneer</h3>
+                            <p class="timeline-desc">Launched India's first CNG-powered bus and the legendary 'Stallion' all-terrain logistics vehicle, still the backbone of Indian defence logistics.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-year">2002</span>
+                            <h3 class="timeline-title">Hybrid Breakthrough</h3>
+                            <p class="timeline-desc">Developed India's first Hybrid Electric Vehicle, foreshadowing the company's eventual dominance in zero-emission mobility.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-year">2010s</span>
+                            <h3 class="timeline-title">Global Expansion</h3>
+                            <p class="timeline-desc">Strategic JVs with Continental AG, Alteams, and John Deere. Acquired Optare PLC (UK), laying groundwork for Switch Mobility. Forged global supply chains.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-dot timeline-dot-highlight"></div>
+                        <div class="timeline-card timeline-card-highlight">
+                            <span class="timeline-year">2026</span>
+                            <h3 class="timeline-title">Historic Peak</h3>
+                            <p class="timeline-desc">Record revenue of ₹56,947 Cr. Switch Mobility turns profitable with 1,530 e-buses. ₹5,000 Cr battery ecosystem announced. 220,437 vehicles sold.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 8. CTA ============ -->
+    <section class="cta-section" id="innovation" aria-labelledby="cta-title">
+        <div class="cta-particles" aria-hidden="true">
+            <div class="cta-particle cp1"></div>
+            <div class="cta-particle cp2"></div>
+            <div class="cta-particle cp3"></div>
+            <div class="cta-particle cp4"></div>
+        </div>
+        <div class="container cta-content">
+            <span class="cta-tagline">The Future of Mobility is Here</span>
+            <h2 class="cta-title" id="cta-title">Ready to Drive with <span class="gradient-text">Ashok Leyland</span>?</h2>
+            <p class="cta-desc">Join 50+ countries and thousands of enterprises who trust Ashok Leyland for their commercial vehicle needs. From cutting-edge electric buses to rugged heavy-duty trucks — we have the solution for your journey.</p>
+            <div class="cta-actions">
+                <a href="#contact" class="btn btn-cta btn-large cta-glow">Contact Our Team</a>
+                <a href="#services" class="btn btn-cta-secondary btn-large">Explore Products</a>
+            </div>
+            <div class="cta-badges">
+                <span class="cta-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M8 1l2 4 4.5.5-3.2 3.2L12 13l-4-2.5L4 13l.7-4.3L1.5 5.5 6 5l2-4z" fill="#22c55e"/>
+                    </svg>
+                    ISO 9001 Certified
+                </span>
+                <span class="cta-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M8 1l2 4 4.5.5-3.2 3.2L12 13l-4-2.5L4 13l.7-4.3L1.5 5.5 6 5l2-4z" fill="#22c55e"/>
+                    </svg>
+                    BS VI / Euro 6 Compliant
+                </span>
+                <span class="cta-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M8 1l2 4 4.5.5-3.2 3.2L12 13l-4-2.5L4 13l.7-4.3L1.5 5.5 6 5l2-4z" fill="#22c55e"/>
+                    </svg>
+                    75+ Years of Trust
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 9. CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get in Touch</span>
+                <div class="section-title-wrapper">
+                    <h2 class="section-title" id="contact-title">Connect with <span class="gradient-text">Ashok Leyland</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+                <p class="section-desc">Have a question about our products, services, or investment opportunities? Our team is ready to assist you worldwide.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true">
+                            <span class="form-error" id="name-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required aria-required="true">
+                            <span class="form-error" id="email-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890">
+                            <span class="form-error" id="phone-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..." required aria-required="true"></textarea>
+                            <span class="form-error" id="message-error" role="alert"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Head Office</h4>
+                            <p>Ashok Leyland Limited<br>
+                            No. 1, Sardar Patel Road<br>
+                            Guindy, Chennai — 600 032<br>
+                            Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 44 2250 1000<br>
+                            +91 44 2250 1111</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@ashokleyland.com<br>
+                            investors@ashokleyland.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <polyline points="12 6 12 12 16 14" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday — Friday: 9:00 AM — 6:00 PM<br>
+                            Saturday: 9:00 AM — 1:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M8 11v5m0-7v0m4 7v-4a2 2 0 114 0v4M8 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter / X">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M4 4l6 7-6 7h2l5-5.5L16 18h6l-6-7 6-7h-2l-5 5.5L10 4H4z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <rect x="2" y="6" width="20" height="12" rx="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <polygon points="10 9.5 16 12 10 14.5" fill="#e74c3c"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M16 8h-2a2 2 0 00-2 2v10m-4-6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 10. FOOTER ============ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                            <rect width="36" height="36" rx="6" fill="#fff"/>
+                            <path d="M8 26V10h6l4 8 4-8h6v16h-5V17l-5 9-5-9v9H8z" fill="#0d2c54"/>
+                        </svg>
+                        <span>Ashok Leyland</span>
+                    </div>
+                    <p class="footer-tagline">A Hinduja Group Enterprise — Moving the world since 1948.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Our Subsidiaries</h4>
+                    <ul>
+                        <li><a href="#">Hinduja Leyland Finance</a></li>
+                        <li><a href="#">Hinduja Tech Limited</a></li>
+                        <li><a href="#">Switch Mobility</a></li>
+                        <li><a href="#">Albonair GmbH</a></li>
+                        <li><a href="#">Global TVS Bus Body</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Products</a></li>
+                        <li><a href="#global">Global Operations</a></li>
+                        <li><a href="#timeline">Milestones</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Investor Relations</h4>
+                    <ul>
+                        <li><a href="#">Annual Reports</a></li>
+                        <li><a href="#">Financial Results</a></li>
+                        <li><a href="#">Shareholder Info</a></li>
+                        <li><a href="#">Corporate Governance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ashok Leyland Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M10 17V3M4 9l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
