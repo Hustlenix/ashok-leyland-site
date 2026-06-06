@@ -3,15 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashok Leyland - Global Leader in Commercial Mobility</title>
+    <title>Ashok Leyland – Global Leader in Commercial Mobility</title>
     <meta name="description" content="Ashok Leyland, flagship of the Hinduja Group, is India's second-largest commercial vehicle manufacturer and the world's fourth-largest bus manufacturer. 75+ years of innovation across 50+ countries.">
-    <meta name="keywords" content="Ashok Leyland, commercial vehicles, trucks, buses, electric vehicles, Switch Mobility, Hinduja Group, automotive, manufacturing">
+    <meta name="keywords" content="Ashok Leyland, commercial vehicles, trucks, buses, electric vehicles, Switch Mobility, Hinduja Group, automotive, manufacturing India">
+    <meta name="author" content="Ashok Leyland Limited">
+    <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ashok Leyland",
+        "url": "https://hustlenix.github.io/ashok-leyland-site/",
+        "logo": "https://hustlenix.github.io/ashok-leyland-site/images/logo.svg",
+        "description": "India's second-largest commercial vehicle manufacturer and the world's fourth-largest bus manufacturer. Flagship of the Hinduja Group.",
+        "foundingDate": "1948",
+        "founder": { "@type": "Organization", "name": "Hinduja Group" },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No. 1, Sardar Patel Road, Guindy",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600 032",
+            "addressCountry": "IN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-44-2250-1000",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/company/ashok-leyland",
+            "https://www.facebook.com/AshokLeyland",
+            "https://www.youtube.com/user/AshokLeylandLtd"
+        ]
+    }
+    </script>
 </head>
 <body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- ============ PARTICLES ============ -->
     <div class="particles" aria-hidden="true">
@@ -48,6 +82,7 @@
             </ul>
             <a href="#contact" class="btn btn-primary nav-cta">Contact Sales</a>
         </div>
+        <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
     </nav>
 
     <!-- ============ 2. HERO ============ -->
@@ -56,8 +91,8 @@
             <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=80" alt="Truck on highway at night" loading="eager">
         </div>
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <p class="hero-tagline" id="heroTagline">75+ Years of Engineering Excellence</p>
+        <div class="container hero-content" id="main-content">
+            <p class="hero-tagline">75+ Years of Engineering Excellence</p>
             <h1 class="hero-title">Engineering the <span class="gradient-text">Future</span> of<br>Global <span class="gradient-text">Mobility</span></h1>
             <p class="hero-subtitle">From the highways of India to the markets of Africa, the Middle East, and beyond — Ashok Leyland moves the world with reliable, innovative, and sustainable commercial vehicles trusted across 50+ nations.</p>
             <div class="hero-actions">
@@ -353,13 +388,10 @@
                 </div>
                 <div class="about-visual">
                     <div class="about-image-placeholder">
-                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-                            <circle cx="60" cy="60" r="54" stroke="#0d2c54" stroke-width="3" fill="none"/>
-                            <path d="M60 6v108M6 60h108" stroke="#3498db" stroke-width="2" opacity="0.5"/>
-                            <circle cx="60" cy="60" r="18" stroke="#e74c3c" stroke-width="3" fill="none"/>
-                            <path d="M60 42v36M42 60h36" stroke="#0d2c54" stroke-width="2" opacity="0.4"/>
-                            <circle cx="60" cy="60" r="6" fill="#e74c3c" opacity="0.6"/>
-                        </svg>
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
+                             alt="Ashok Leyland global headquarters corporate building"
+                             loading="lazy"
+                             style="width:100%;max-width:480px;border-radius:var(--radius-lg);border:1px solid var(--border);">
                         <p class="about-image-caption">Global Headquarters, Chennai, India</p>
                     </div>
                 </div>
@@ -489,17 +521,17 @@
                     <form class="contact-form" id="contactForm" novalidate>
                         <div class="form-group">
                             <label for="name">Full Name <span aria-hidden="true">*</span></label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true">
+                            <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true" autocomplete="name">
                             <span class="form-error" id="name-error" role="alert"></span>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address <span aria-hidden="true">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="john@company.com" required aria-required="true">
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required aria-required="true" autocomplete="email" inputmode="email">
                             <span class="form-error" id="email-error" role="alert"></span>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890">
+                            <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890" autocomplete="tel" inputmode="tel">
                             <span class="form-error" id="phone-error" role="alert"></span>
                         </div>
                         <div class="form-group">
