@@ -1,196 +1,211 @@
-# Your workplace has the answer. Just ask Dala for it. — Style Reference
-> Particle cosmos on a void — violet pulse against infinite black
+# Ashok Leyland School Bus — Style Reference
+> Iconic yellow on asphalt — safety meets engineering
 
-**Theme:** dark
+**Theme:** light
 
-Dala is a knowledge-management product rendered as a dark cosmic field: a pure black canvas, a single saturated violet as the only authority color, and white type that glows against the void. The interface recedes — sparse text blocks, hairline borders, pill controls — while a massive particle constellation dominates the visual real estate, its thousands of tiny geometric shapes (triangles, circles, diamonds) clustering into organic forms. Typography is stretched and ultra-tight at display sizes (negative tracking pushes letters almost together) but opens up at body sizes (slight positive tracking aids legibility on black). Components feel lightweight and fast: no shadows, no gradients, no card elevation — depth comes purely from color contrast and the negative space of the void.
+The Ashok Leyland School Bus is a design system built around the world's most iconic vehicle silhouette. Warm school-bus yellow anchors every interface — not as a novelty, but as a functional safety color that signals trust, visibility, and reliability. The visual language is chunky and substantial: bold typography at 700–800 weight, pill-shaped buttons that mirror the bus's rounded profile, and generous white space that lets the yellow breathe without overwhelming. Cards sit on warm white backgrounds with soft rounded corners, framed by hairline borders in warm gray. No glassmorphism, no dark mode — this is a daylight system built for readability and immediate recognition. Every component feels solid, like the vehicle it represents.
 
 ## Tokens — Colors
 
 | Name | Value | Token | Role |
 |------|-------|-------|------|
-| Void | `#000000` | `--color-void` | Page background, primary canvas — the dark field where the constellation lives |
-| Bone | `#ffffff` | `--color-bone` | Primary text, icon strokes, hairlines, card borders, nav text — the only light that reads on the void |
-| Ash | `#bdbdbd` | `--color-ash` | Secondary muted text, subtle border accents — quieter than bone, still legible on black |
-| Smoke | `#9a9a9a` | `--color-smoke` | Tertiary text, nav link resting state, low-emphasis dividers — fades into the background |
-| Plum Voltage | `#8052ff` | `--color-plum-voltage` | Primary action background, nav accents, icon highlights, decorative borders — the brand pulse, the only filled chromatic surface in the UI |
-| Amber Spark | `#ffb829` | `--color-amber-spark` | Yellow accent for outlined action borders, linked labels, and lightweight interactive emphasis. Do not promote it to the primary CTA color |
-| Lichen | `#15846e` | `--color-lichen` | Decorative icon accent, constellation node color — appears in illustration marks, not core interface chrome |
+| School Bus Yellow | `#FFB800` | `--color-yellow` | Primary brand color — action backgrounds, hero accents, nav highlights, CTA fills. The single source of color authority. |
+| Yield | `#D49500` | `--color-yield` | Hover/active state for yellow elements. Deepened for press states. |
+| Guard | `#1A1A2E` | `--color-guard` | Primary text, icon strokes, nav text — deep navy-black for maximum contrast on warm surfaces. |
+| Warm White | `#FFFCF5` | `--color-warm-white` | Page background, card surfaces, form fields — the warm canvas that lets yellow pop. |
+| Bone | `#FFFFFF` | `--color-bone` | Pure white for text on yellow backgrounds, inverted cards, modal surfaces. |
+| Ash | `#E8E4DC` | `--color-ash` | Hairline borders, subtle dividers, card outlines — warm gray that reads softly on warm white. |
+| Smoke | `#9E9E9E` | `--color-smoke` | Muted text, placeholder text, disabled states. |
+| Stop | `#E53935` | `--color-stop` | Error states, required field markers, critical alerts — the red octagon shorthand. |
+| Go | `#43A047` | `--color-go` | Success states, verified badges, completion indicators. |
 
 ## Tokens — Typography
 
-### Acronym — Sole typeface. Weight 200 carries display headlines — its extreme thinness against 113px creates a 'etched in light' feel. Weight 600–700 for nav and buttons. Weight 400 for body. Negative tracking at large sizes (-0.04em) pulls glyphs tight; positive tracking (0.021–0.05em) opens body and nav for readability on black. The single-family approach keeps the system spare — no serifs, no display variants, only weight and tracking do the work. · `--font-acronym`
-- **Substitute:** Inter, Söhne, or Space Grotesk
-- **Weights:** 200, 400, 600, 700
-- **Sizes:** 12, 14, 15, 18, 24, 27, 36, 42, 48, 78, 113
-- **Line height:** 0.81–1.50
-- **Letter spacing:** -0.04em at 78–113px (display); +0.021em at 12–15px (nav/caption); +0.025em at 15–18px (body); +0.05em at 12–14px (eyebrow/uppercase kicker)
-- **Role:** Sole typeface. Weight 200 carries display headlines — its extreme thinness against 113px creates a 'etched in light' feel. Weight 600–700 for nav and buttons. Weight 400 for body. Negative tracking at large sizes (-0.04em) pulls glyphs tight; positive tracking (0.021–0.05em) opens body and nav for readability on black. The single-family approach keeps the system spare — no serifs, no display variants, only weight and tracking do the work.
+### Poppins + Inter — Dual-family system
+**Poppins (700–800)** carries headlines, CTAs, and nav — its geometric roundness echoes the bus's friendly silhouette. **Inter (400–600)** handles body text, captions, and form labels for clean readability.
+
+- **Headlines:** Poppins 700 or 800
+- **Body:** Inter 400
+- **Buttons/Nav:** Poppins 600
+- **Captions/Labels:** Inter 500
+- **Uppercase eyebrow:** Inter 600, 0.1em tracking
 
 ### Type Scale
 
-| Role | Size | Line Height | Letter Spacing | Token |
-|------|------|-------------|----------------|-------|
-| caption | 12px | 1.5 | 0.05px | `--text-caption` |
-| body-sm | 14px | 1.5 | 0.05px | `--text-body-sm` |
-| subheading | 18px | 1.5 | 0.025px | `--text-subheading` |
-| heading-sm | 24px | 1.3 | 0.021px | `--text-heading-sm` |
-| heading | 36px | 1.2 | 0.021px | `--text-heading` |
-| heading-lg | 48px | 1.1 | -0.04px | `--text-heading-lg` |
-| display | 78px | 0.9 | -0.04px | `--text-display` |
-| hero | 113px | 0.81 | -0.04px | `--text-hero` |
+| Role | Size | Weight | Line Height | Letter Spacing | Font |
+|------|------|--------|-------------|----------------|------|
+| caption | 11px | 600 | 1.3 | 0.08em | Inter |
+| eyebrow | 12px | 600 | 1.2 | 0.1em | Inter |
+| body-sm | 14px | 400 | 1.6 | 0.01em | Inter |
+| body | 16px | 400 | 1.7 | 0.01em | Inter |
+| lead | 18px | 400 | 1.7 | 0.01em | Inter |
+| heading-sm | 22px | 700 | 1.25 | -0.01em | Poppins |
+| heading | 32px | 700 | 1.15 | -0.02em | Poppins |
+| heading-lg | 44px | 800 | 1.1 | -0.02em | Poppins |
+| display | 64px | 800 | 1.02 | -0.03em | Poppins |
+| hero | 80px | 800 | 0.95 | -0.03em | Poppins |
 
 ## Tokens — Spacing & Shapes
 
-**Base unit:** 6px
+**Base unit:** 8px
 
 **Density:** comfortable
 
 ### Spacing Scale
 
-| Name | Value | Token |
-|------|-------|-------|
-| 6 | 6px | `--spacing-6` |
-| 12 | 12px | `--spacing-12` |
-| 18 | 18px | `--spacing-18` |
-| 24 | 24px | `--spacing-24` |
-| 30 | 30px | `--spacing-30` |
-| 36 | 36px | `--spacing-36` |
-| 60 | 60px | `--spacing-60` |
-| 96 | 96px | `--spacing-96` |
-| 120 | 120px | `--spacing-120` |
+| Name | Value |
+|------|-------|
+| 8 | 8px |
+| 16 | 16px |
+| 24 | 24px |
+| 32 | 32px |
+| 40 | 40px |
+| 48 | 48px |
+| 64 | 64px |
+| 96 | 96px |
+| 128 | 128px |
 
 ### Border Radius
 
 | Element | Value |
 |---------|-------|
-| nav | 24px |
-| cards | 24px |
-| buttons | 24px |
+| buttons | 100px |
+| cards | 16px |
+| inputs | 12px |
+| nav pills | 100px |
 
 ### Layout
 
 - **Page max-width:** 1200px
-- **Section gap:** 60px
-- **Card padding:** 24px
-- **Element gap:** 15px
+- **Section gap:** 64px
+- **Card padding:** 32px
+- **Element gap:** 16px
 
 ## Components
 
 ### Logo Mark
 **Role:** Brand identity in header
 
-Wordmark 'Dala' in Bone (#ffffff) at 18px, Acronym weight 600, accompanied by a geometric envelope/crystal icon. The icon is line-drawn, stroke ~1.5px, in Plum Voltage (#8052ff) or Bone depending on context.
+Wordmark "Ashok Leyland" in Guard (#1A1A2E) at 20px, Poppins weight 700. Accompanied by a simplified bus-front icon: a rounded rectangle with windows, rendered in School Bus Yellow (#FFB800) fill with Bone (#FFFFFF) windows. The icon acts as both brand mark and product signal — you know immediately what they build.
 
 ### Nav Text Link
-**Role:** Header navigation items (MANIFESTO, TEAM, BLOG)
+**Role:** Header navigation items
 
-Acronym weight 400, 14px, tracking 0.021em, color Smoke (#9a9a9a) at rest → Bone (#ffffff) on hover. No underline, no background — just a color shift on the void.
+Inter weight 500, 14px, color Smoke (#9E9E9E) at rest → Guard (#1A1A2E) on hover. Subtle bottom-border slide on active state (2px solid School Bus Yellow). No background fill — just color shift on warm white.
 
 ### Primary Action Button
-**Role:** Filled CTA — REQUEST ACCESS
+**Role:** Filled CTA
 
-Pill shape, 24px border-radius. Background Plum Voltage (#8052ff), text Bone (#ffffff), Acronym weight 600, 12px, tracking 0.05em, uppercase. Padding 14px 16px. No border, no shadow. The button glows optically because violet on black is the only saturated fill in the system.
+Pill shape, border-radius 100px. Background School Bus Yellow (#FFB800), text Guard (#1A1A2E), Poppins weight 600, 14px. Padding 12px 28px. No border. Hover: background Yield (#D49500). The yellow reads as urgent and friendly — the same psychology as the bus itself.
 
-### Ghost Nav Button
-**Role:** Header REQUEST ACCESS pill
+### Secondary Outline Button
+**Role:** Ghost CTA
 
-Same dimensions and type as Primary Action Button, positioned right-aligned in the nav bar. Acts as the nav's terminal action — the only colored element in the header.
+Same dimensions and type as Primary. Border 2px solid Guard (#1A1A2E), text Guard, transparent background. Hover: background Guard, text Bone.
 
-### Display Headline
-**Role:** Hero and section headlines
+### Hero Headline Block
+**Role:** Hero section
 
-Acronym weight 200, 78–113px, line-height 0.81–0.90, letter-spacing -0.04em, color Bone (#ffffff). The thin weight at extreme size is the signature: type that looks etched, not stamped. Lines break aggressively — each line is a short statement.
+Display text in Poppins weight 800, 64–80px, line-height 0.95–1.02, letter-spacing -0.03em, color Guard (#1A1A2E). Eyebrow above in Inter weight 600, 12px, uppercase, 0.1em tracking, color School Bus Yellow. Body paragraph below in Inter weight 400, 18px, color Guard at 70% opacity. CTA: primary yellow pill button.
 
-### Eyebrow Kicker
+### Section Kicker
 **Role:** Pre-headline label
 
-Acronym weight 600, 12–14px, uppercase, tracking 0.05em, color Bone (#ffffff) or Plum Voltage (#8052ff). Sits above the headline as a tonal flag (e.g., 'STOP MANAGING KNOWLEDGE. START USING IT.').
+Inter weight 600, 12px, uppercase, tracking 0.1em, color School Bus Yellow (#FFB800). Sits above section headlines as a tonal flag.
+
+### Section Headline
+**Role:** Section titles
+
+Poppins weight 700, 32px, line-height 1.15, letter-spacing -0.02em, color Guard (#1A1A2E). Short, declarative statements.
 
 ### Body Paragraph
-**Role:** Descriptive body copy
+**Role:** Descriptive copy
 
-Acronym weight 400, 15–18px, line-height 1.5, tracking 0.025em, color Bone (#ffffff) or Ash (#bdbdbd) for secondary paragraphs. Maximum measure ~60ch.
+Inter weight 400, 16px, line-height 1.7, tracking 0.01em, color Guard at 80% opacity (#2A2A3E). Maximum measure ~65ch.
 
-### Hairline Border
-**Role:** Section dividers, card outlines, decorative rules
+### Card
+**Role:** Content containers
 
-1px solid #ffffff at low alpha or Ash (#bdbdbd) for visible structure. No fill, no radius on dividers. On cards: 24px radius with 1px #ffffff border at ~10% alpha.
+Background Warm White (#FFFCF5), border 1px solid Ash (#E8E4DC), border-radius 16px, padding 32px. Hover: border-color School Bus Yellow, subtle translateY(-2px). No shadow — the card floats on the warm canvas with just that hairline border.
 
-### Particle Constellation Visual
-**Role:** Hero and section atmospheric illustration
+### Stat Block
+**Role:** Metric displays
 
-Thousands of micro-shapes (triangles, circles, diamonds, squares, 2–6px) scattered across the black canvas, clustering into organic forms (brain, flower, sphere). Colors drawn from the palette: Plum Voltage, Amber Spark, Lichen, Bone. Density varies — thick clusters in the visual center, sparse drift at the edges. Functions as the brand's visual identity, not decoration.
+Large number in Poppins weight 800, 44px, color School Bus Yellow. Label below in Inter weight 500, 12px, uppercase, 0.08em tracking, color Smoke (#9E9E9E).
 
-### Outlined Icon Mark
-**Role:** Decorative iconography in sections
+### Checkmark Badge
+**Role:** Feature indicators
 
-Line-art geometric icons (envelope/crystal shape visible), stroke ~1.5px, color Lichen (#15846e) or Plum Voltage (#8052ff). Centered, large (~80–120px), surrounded by sparse particle drift.
+Small pill with yellow background and Guard-colored checkmark icon. Padding 4px 12px, border-radius 100px, font Inter weight 500, 12px.
 
 ## Do's and Don'ts
 
 ### Do
-- Use Plum Voltage (#8052ff) as the only filled button background in the system — it is the single source of color authority
-- Set display headlines at weight 200, 78–113px, with -0.04em tracking — the thinness is the signature, not a style choice to override
-- Apply 24px border-radius to every interactive surface (buttons, nav, cards) — full pills for small elements, rounded squares for larger cards
-- Use #ffffff with 0.05em tracking and uppercase for eyebrow/kicker text — it reads as a system flag above the headline
-- Let the particle constellation own at least 50% of hero real estate — the text is a guest in the visual, not the other way around
-- Keep section gaps at 60px and let the void breathe — never fill space with decorative elements just to avoid emptiness
-- Use negative tracking (-0.04em) only at 48px and above; use positive tracking (+0.021–0.05em) at body and below
+- Use School Bus Yellow (#FFB800) as the primary action color — it is the single authority color, inspired by the vehicle itself
+- Set headlines in Poppins at 700–800 weight — the roundness of the typeface echoes the bus silhouette
+- Use generous white space (min 64px section gaps) — the yellow needs room to breathe
+- Apply pill-shaped borders (100px radius) to all buttons — they mirror the bus's rounded edges
+- Keep card backgrounds at Warm White (#FFFCF5) — pure white is too cold against yellow
+- Use the deep Guard (#1A1A2E) for primary text — maximum contrast for readability
+- Let yellow dominate exactly one element per viewport — too much yellow reads as caution tape, not brand
 
 ### Don't
-- Never use shadows, glows, or elevation effects — depth on this system comes from the void, not from stacked surfaces
-- Never add a second filled chromatic button — the system has exactly one action color (Plum Voltage) and that's by design
-- Never use a font weight above 700 or below 200 — the Acronym scale is the system, not a starting point
-- Never set body type below 15px or with negative tracking — the dark canvas needs openness to stay legible
-- Never use a border-radius smaller than 24px on any interactive element — pill-shaped is the system's geometry
-- Never place bright text on a colored background — Plum Voltage on Bone is forbidden; invert only
-- Never add gradients, textures, or noise to surfaces — the black canvas is pure; particles provide all visual interest
+- Never use dark mode — school buses live in daylight; this is a light-mode-only system
+- Never add shadows or elevation effects — depth comes from color contrast and hairline borders
+- Never use a second bright color at the same weight as yellow — red and green are reserved for semantic states only
+- Never use font weight below 400 — thin text reads as fragile, not solid
+- Never set body text below 14px — readability on warm backgrounds demands size
+- Never use border-radius smaller than 12px on inputs — the system's geometry is generous
+- Never use emoji as icons — use Heroicons or custom SVG bus illustrations
+- Never center-align body text blocks — left-align for readability
 
 ## Surfaces
 
 | Level | Name | Value | Purpose |
 |-------|------|-------|---------|
-| 0 | Void | `#000000` | Base canvas — every section and component sits directly on black, no nested surface layers |
+| 0 | Warm White | `#FFFCF5` | Base canvas — all sections sit on this warm surface |
+| 1 | Bone | `#FFFFFF` | Cards, form fields, elevated containers |
+| 2 | Ash | `#E8E4DC` | Dividers, hairline borders |
 
 ## Elevation
 
-No shadows, no elevation effects, no glow. Depth is implied by type weight, color contrast, and the particle field itself. A 'card' is just a hairline border on the void. This keeps the cosmos feeling flat and infinite rather than paneled and productized.
+No shadows, no elevation effects. A card is identified by its Warm White fill against the slightly warmer page background, separated by a 1px Ash border. Hover state shifts the border to School Bus Yellow with a 2px upward translation. This keeps the system feeling flat, solid, and daylight-optimized.
 
 ## Imagery
 
-The visual language is entirely particle-based: thousands of tiny geometric primitives (triangles, circles, diamonds, squares) at 2–6px, scattered across the black void and clustering into organic macro-forms (a brain in the hero, a spore/dandelion in section two). Color is drawn from the full brand palette (Plum Voltage, Amber Spark, Lichen, Bone) but the particles never form a literal logo or icon — they suggest emergence, intelligence, collective assembly. No photography, no illustrations in the traditional sense, no 3D renders. The constellation is the brand mark. A single outlined geometric icon (envelope/crystal, ~100px) appears in section two as a focal anchor, rendered in Lichen teal with a thin stroke. Imagery density is high but never solid — always permeable, always letting the void show through.
+Photography should feature school buses in natural daylight settings: loading zones, suburban streets, fleet depots. Warm golden-hour light complements the yellow. No night shots, no moody lighting. Product shots should emphasize the bus's front profile — the iconic flat-nose cab with the yellow expanse. Secondary imagery shows children boarding, drivers at the wheel, and fleet lineups. All imagery should feel safe, warm, and community-oriented.
 
 ## Layout
 
-Full-bleed dark canvas with no nested containers or card panels. Hero is a 50/50 split: left half holds a tight text block (display headline + eyebrow + body + CTA, max-width ~480px), right half is the particle constellation extending edge-to-edge. Navigation is a fixed top bar with logo left, text links right-of-center, and a pill CTA at the far right. Vertical section rhythm is 60px gaps with no dividers — each section is a new constellation cluster with a new focal point. Body text columns are narrow (~60ch). The second section shifts to centered composition: large outlined icon mid-canvas, constellation field as background, a single paragraph anchored at the bottom. No grid system is visually expressed — content floats in the void.
+Full-width sections on the warm white canvas. Navigation is a fixed top bar with logo left, text links right-of-center, and a yellow pill CTA at the far right. Hero is full-width with a right-aligned bus image and left text block (max-width 520px). Section rhythm is 96px vertical gaps. Cards grid in a 3-column layout, timeline is center-aligned with alternating left/right items. The contact section uses a 2-column form + info layout. Every section breathes — no cramming.
 
 ## Agent Prompt Guide
 
 Quick Color Reference:
-- background: #000000
-- text (primary): #ffffff
-- text (muted): #9a9a9a / #bdbdbd
-- border (hairline): #ffffff or #bdbdbd
-- accent: #8052ff (Plum Voltage)
-- primary action: #8052ff (filled action)
+- background: #FFFCF5
+- primary brand: #FFB800
+- text (primary): #1A1A2E
+- text (muted): #9E9E9E
+- border: #E8E4DC
+- error: #E53935
+- success: #43A047
 
 Example Component Prompts:
 
-1. Hero headline block: Black background (#000000). Display text 'Unlock collective wisdom.' in Acronym weight 200, 113px, line-height 0.81, letter-spacing -0.04em, color #ffffff. Above it, an eyebrow 'STOP MANAGING KNOWLEDGE. START USING IT.' in Acronym weight 600, 12px, uppercase, tracking 0.05em, color #ffffff. Body paragraph below at 15px weight 400, line-height 1.5, tracking 0.025em, color #ffffff. Primary CTA button: background #8052ff, text #ffffff, Acronym weight 600, 12px uppercase, tracking 0.05em, border-radius 24px, padding 14px 16px.
+1. Hero block: Warm white background (#FFFCF5). Eyebrow 'ASHOK LEYLAND SCHOOL BUS' in Inter 600, 12px, uppercase, 0.1em tracking, color #FFB800. Headline 'Engineered for Safety. Built for the Journey.' in Poppins 800, 64px, line-height 1.02, letter-spacing -0.03em, color #1A1A2E. Body paragraph in Inter 400, 18px, color #1A1A2E at 70% opacity. Primary CTA button: background #FFB800, text #1A1A2E, Poppins 600, 14px, border-radius 100px, padding 12px 28px.
 
-2. Ghost nav link: Acronym weight 400, 14px, tracking 0.021em, color #9a9a9a resting → #ffffff hover. No background, no border, no underline. Right-aligned group of 3 links.
+2. Nav link: Inter 500, 14px, color #9E9E9E resting → #1A1A2E hover. Bottom-border active indicator: 2px solid #FFB800. Right side: yellow pill CTA.
 
-3. Outlined icon mark: A line-art geometric shape (envelope or crystal), stroke 1.5px, color #15846e, centered on the black canvas, ~100px size. Surrounded by sparse particle drift in the brand palette colors.
+3. Stat block: Value in Poppins 800, 44px, color #FFB800. Label in Inter 500, 12px, uppercase, 0.08em tracking, color #9E9E9E.
 
-4. Eyebrow kicker: Acronym weight 600, 12px, uppercase, letter-spacing 0.05em, color #8052ff. 12px margin-bottom from the headline it precedes.
+4. Card: Background #FFFCF5, border 1px solid #E8E4DC, border-radius 16px, padding 32px. Hover: border-color #FFB800, transform translateY(-2px).
 
 ## Similar Brands
 
-- **Linear** — Same ultra-dark canvas, single chromatic accent (violet/purple), geometric sans display headlines, pill-shaped CTAs, sparse UI with constellation-like spatial density
-- **Anthropic** — Dark void aesthetic with minimal UI chrome, large restrained serif-adjacent display type, single warm accent color, hairline borders on near-black surfaces
-- **Midjourney** — Cosmic particle-field visual language, black canvas, thin display type floating in space, minimal product chrome, generative atmosphere as brand identity
-- **Replicate** — Dark mode with single violet brand color, ultra-thin display headlines, pill buttons, sparse interface that lets visual/artwork dominate
+- **First Student** — The same yellow as a brand identity, youthful but professional, clean sans-serif typography
+- **Thomas Built Buses** — Industrial heritage, bold yellow logo, straightforward safety-first messaging
+- **Blue Bird Corporation** — Classic American school bus manufacturer, yellow as primary identity, community-focused
+- **Navistar/IC Bus** — Commercial vehicle heritage adapted to school transport, yellow as the definitive brand color
 
 ## Quick Start
 
@@ -199,134 +214,55 @@ Example Component Prompts:
 ```css
 :root {
   /* Colors */
-  --color-void: #000000;
-  --color-bone: #ffffff;
-  --color-ash: #bdbdbd;
-  --color-smoke: #9a9a9a;
-  --color-plum-voltage: #8052ff;
-  --color-amber-spark: #ffb829;
-  --color-lichen: #15846e;
+  --color-yellow: #FFB800;
+  --color-yield: #D49500;
+  --color-guard: #1A1A2E;
+  --color-warm-white: #FFFCF5;
+  --color-bone: #FFFFFF;
+  --color-ash: #E8E4DC;
+  --color-smoke: #9E9E9E;
+  --color-stop: #E53935;
+  --color-go: #43A047;
 
   /* Typography — Font Families */
-  --font-acronym: 'Acronym', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
 
   /* Typography — Scale */
-  --text-caption: 12px;
-  --leading-caption: 1.5;
-  --tracking-caption: 0.05px;
+  --text-caption: 11px;
+  --text-eyebrow: 12px;
+  --text-body: 16px;
   --text-body-sm: 14px;
-  --leading-body-sm: 1.5;
-  --tracking-body-sm: 0.05px;
-  --text-subheading: 18px;
-  --leading-subheading: 1.5;
-  --tracking-subheading: 0.025px;
-  --text-heading-sm: 24px;
-  --leading-heading-sm: 1.3;
-  --tracking-heading-sm: 0.021px;
-  --text-heading: 36px;
-  --leading-heading: 1.2;
-  --tracking-heading: 0.021px;
-  --text-heading-lg: 48px;
-  --leading-heading-lg: 1.1;
-  --tracking-heading-lg: -0.04px;
-  --text-display: 78px;
-  --leading-display: 0.9;
-  --tracking-display: -0.04px;
-  --text-hero: 113px;
-  --leading-hero: 0.81;
-  --tracking-hero: -0.04px;
-
-  /* Typography — Weights */
-  --font-weight-extralight: 200;
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
+  --text-lead: 18px;
+  --text-heading-sm: 22px;
+  --text-heading: 32px;
+  --text-heading-lg: 44px;
+  --text-display: 64px;
+  --text-hero: 80px;
 
   /* Spacing */
-  --spacing-unit: 6px;
-  --spacing-6: 6px;
-  --spacing-12: 12px;
-  --spacing-18: 18px;
-  --spacing-24: 24px;
-  --spacing-30: 30px;
-  --spacing-36: 36px;
-  --spacing-60: 60px;
-  --spacing-96: 96px;
-  --spacing-120: 120px;
+  --space-unit: 8px;
+  --s8: 8px;
+  --s16: 16px;
+  --s24: 24px;
+  --s32: 32px;
+  --s40: 40px;
+  --s48: 48px;
+  --s64: 64px;
+  --s96: 96px;
+  --s128: 128px;
+
+  /* Border Radius */
+  --radius-pill: 100px;
+  --radius-card: 16px;
+  --radius-input: 12px;
 
   /* Layout */
-  --page-max-width: 1200px;
-  --section-gap: 60px;
-  --card-padding: 24px;
-  --element-gap: 15px;
-
-  /* Border Radius */
-  --radius-3xl: 24px;
-
-  /* Named Radii */
-  --radius-nav: 24px;
-  --radius-cards: 24px;
-  --radius-buttons: 24px;
+  --max-width: 1200px;
 
   /* Surfaces */
-  --surface-void: #000000;
-}
-```
-
-### Tailwind v4
-
-```css
-@theme {
-  /* Colors */
-  --color-void: #000000;
-  --color-bone: #ffffff;
-  --color-ash: #bdbdbd;
-  --color-smoke: #9a9a9a;
-  --color-plum-voltage: #8052ff;
-  --color-amber-spark: #ffb829;
-  --color-lichen: #15846e;
-
-  /* Typography */
-  --font-acronym: 'Acronym', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-
-  /* Typography — Scale */
-  --text-caption: 12px;
-  --leading-caption: 1.5;
-  --tracking-caption: 0.05px;
-  --text-body-sm: 14px;
-  --leading-body-sm: 1.5;
-  --tracking-body-sm: 0.05px;
-  --text-subheading: 18px;
-  --leading-subheading: 1.5;
-  --tracking-subheading: 0.025px;
-  --text-heading-sm: 24px;
-  --leading-heading-sm: 1.3;
-  --tracking-heading-sm: 0.021px;
-  --text-heading: 36px;
-  --leading-heading: 1.2;
-  --tracking-heading: 0.021px;
-  --text-heading-lg: 48px;
-  --leading-heading-lg: 1.1;
-  --tracking-heading-lg: -0.04px;
-  --text-display: 78px;
-  --leading-display: 0.9;
-  --tracking-display: -0.04px;
-  --text-hero: 113px;
-  --leading-hero: 0.81;
-  --tracking-hero: -0.04px;
-
-  /* Spacing */
-  --spacing-6: 6px;
-  --spacing-12: 12px;
-  --spacing-18: 18px;
-  --spacing-24: 24px;
-  --spacing-30: 30px;
-  --spacing-36: 36px;
-  --spacing-60: 60px;
-  --spacing-96: 96px;
-  --spacing-120: 120px;
-
-  /* Border Radius */
-  --radius-3xl: 24px;
+  --surface-0: #FFFCF5;
+  --surface-1: #FFFFFF;
+  --surface-2: #E8E4DC;
 }
 ```

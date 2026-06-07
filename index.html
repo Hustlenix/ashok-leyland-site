@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
     {
@@ -49,10 +49,15 @@
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="container nav-container">
             <a href="#" class="logo" aria-label="Ashok Leyland Home">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-                    <rect width="36" height="36" rx="24" fill="#8052ff"/>
-                    <path d="M8 26V10h6l4 8 4-8h6v16h-5V17l-5 9-5-9v9H8z" fill="#fff"/>
-                </svg>
+                <span class="logo-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <rect x="2" y="6" width="20" height="14" rx="3" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                        <rect x="6" y="10" width="4" height="4" rx="1" fill="currentColor" opacity="0.6"/>
+                        <rect x="14" y="10" width="4" height="4" rx="1" fill="currentColor" opacity="0.6"/>
+                        <circle cx="8" cy="22" r="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <circle cx="16" cy="22" r="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </span>
                 <span class="logo-text">Ashok Leyland</span>
             </a>
             <ul class="nav-links" id="navLinks" role="menubar">
@@ -74,44 +79,32 @@
     <!-- ============ HERO ============ -->
     <section class="hero" id="hero" aria-label="Hero">
         <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=80" alt="Truck on highway at night" loading="eager">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1920&q=80" alt="School bus on road" loading="eager">
         </div>
         <div class="hero-grid">
             <div class="hero-content" id="main-content">
-                <p class="hero-eyebrow">75+ Years of Engineering Excellence</p>
-                <h1 class="hero-title">Engineering the Future of Global Mobility</h1>
-                <p class="hero-subtitle">From the highways of India to the markets of Africa, the Middle East, and beyond — Ashok Leyland moves the world with reliable, innovative, and sustainable commercial vehicles trusted across 50+ nations.</p>
+                <p class="hero-eyebrow">Ashok Leyland School Bus</p>
+                <h1 class="hero-title">Engineered for Safety. Built for the Journey.</h1>
+                <p class="hero-subtitle">Every Ashok Leyland school bus is designed with one thing in mind — the safety and comfort of every child on board. Trusted by schools across India and 50+ countries worldwide.</p>
                 <div class="hero-actions">
-                    <a href="#services" class="btn btn-primary btn-large">Explore Products</a>
-                    <a href="#innovation" class="btn btn-secondary btn-large">Discover Innovation</a>
+                    <a href="#services" class="btn btn-primary btn-large">Explore School Buses</a>
+                    <a href="#contact" class="btn btn-secondary btn-large">Request a Quote</a>
                 </div>
             </div>
-            <div class="hero-constellation" aria-hidden="true">
-                <div class="constellation-particle cp1"></div>
-                <div class="constellation-particle cp2"></div>
-                <div class="constellation-particle cp3"></div>
-                <div class="constellation-particle cp4"></div>
-                <div class="constellation-particle cp5"></div>
-                <div class="constellation-particle cp6"></div>
-                <div class="constellation-particle cp7"></div>
-                <div class="constellation-particle cp8"></div>
-                <div class="constellation-particle cp9"></div>
-                <div class="constellation-particle cp10"></div>
-                <div class="constellation-particle cp11"></div>
-                <div class="constellation-particle cp12"></div>
-                <div class="constellation-particle cp13"></div>
-                <div class="constellation-particle cp14"></div>
-                <div class="constellation-particle cp15"></div>
-                <div class="constellation-particle cp16"></div>
-                <div class="constellation-particle cp17"></div>
-                <div class="constellation-particle cp18"></div>
-                <div class="constellation-particle cp19"></div>
-                <div class="constellation-particle cp20"></div>
+            <div class="hero-stat" aria-hidden="true">
+                <div>
+                    <span class="hero-stat-item-value">50+</span>
+                    <div class="hero-stat-item-label">Countries</div>
+                </div>
+                <div>
+                    <span class="hero-stat-item-value">75+</span>
+                    <div class="hero-stat-item-label">Years Heritage</div>
+                </div>
+                <div>
+                    <span class="hero-stat-item-value">1M+</span>
+                    <div class="hero-stat-item-label">Children Safely Transported</div>
+                </div>
             </div>
-        </div>
-        <div class="hero-scroll" aria-hidden="true">
-            <span>Scroll</span>
-            <div class="hero-scroll-line"></div>
         </div>
     </section>
 
@@ -325,7 +318,7 @@
                     <p class="about-text">Our philosophy — <em>"Koi Manzil Door Nahin"</em> (No Dream Too Far) — drives our commitment to engineering excellence, sustainability, and global mobility solutions.</p>
                     <div class="about-quote">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                            <path d="M10 8C6 8 4 11 4 14v6h6v-6H8c0-2 1-4 4-4v-2zm14 0c-4 0-6 3-6 6v6h6v-6h-2c0-2 1-4 4-4v-2z" fill="#8052ff" opacity="0.3"/>
+                            <path d="M10 8C6 8 4 11 4 14v6h6v-6H8c0-2 1-4 4-4v-2zm14 0c-4 0-6 3-6 6v6h6v-6h-2c0-2 1-4 4-4v-2z" fill="#FFB800" opacity="0.3"/>
                         </svg>
                         <blockquote>"Our strategic partnership with CALB is a significant step towards creating a localised battery supply chain in India to accelerate adoption of electric vehicles. A Global Centre of Excellence will be created to serve as a hub for research and development."</blockquote>
                         <cite>— Shenu Agarwal, MD & CEO, Ashok Leyland</cite>
@@ -557,7 +550,7 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-                            <rect width="36" height="36" rx="24" fill="#8052ff"/>
+                            <rect width="36" height="36" rx="24" fill="#FFB800"/>
                             <path d="M8 26V10h6l4 8 4-8h6v16h-5V17l-5 9-5-9v9H8z" fill="#fff"/>
                         </svg>
                         <span>Ashok Leyland</span>
