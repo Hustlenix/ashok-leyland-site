@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashok Leyland – Global Leader in Commercial Mobility</title>
     <meta name="description" content="Ashok Leyland, flagship of the Hinduja Group, is India's second-largest commercial vehicle manufacturer and the world's fourth-largest bus manufacturer. 75+ years of innovation across 50+ countries.">
-    <meta name="keywords" content="Ashok Leyland, commercial vehicles, trucks, buses, electric vehicles, Switch Mobility, Hinduja Group, automotive, manufacturing India">
-    <meta name="author" content="Ashok Leyland Limited">
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +45,7 @@
 
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- ============ 1. NAVBAR ============ -->
+    <!-- ============ NAVBAR ============ -->
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="container nav-container">
             <a href="#" class="logo" aria-label="Ashok Leyland Home">
@@ -57,9 +55,6 @@
                 </svg>
                 <span class="logo-text">Ashok Leyland</span>
             </a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
             <ul class="nav-links" id="navLinks" role="menubar">
                 <li role="none"><a href="#about" role="menuitem" class="nav-link">About</a></li>
                 <li role="none"><a href="#services" role="menuitem" class="nav-link">Products</a></li>
@@ -69,61 +64,44 @@
                 <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
             </ul>
             <a href="#contact" class="btn btn-primary nav-cta">Contact Sales</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
         <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
     </nav>
 
-    <!-- ============ 2. HERO ============ -->
+    <!-- ============ HERO ============ -->
     <section class="hero" id="hero" aria-label="Hero">
         <div class="hero-bg">
             <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=80" alt="Truck on highway at night" loading="eager">
         </div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content" id="main-content">
-            <p class="hero-tagline">75+ Years of Engineering Excellence</p>
-            <h1 class="hero-title">Engineering the Future of<br>Global Mobility</h1>
-            <p class="hero-subtitle">From the highways of India to the markets of Africa, the Middle East, and beyond — Ashok Leyland moves the world with reliable, innovative, and sustainable commercial vehicles trusted across 50+ nations.</p>
-            <div class="hero-actions">
-                <a href="#services" class="btn btn-primary btn-large">Explore Our Products</a>
-                <a href="#innovation" class="btn btn-secondary btn-large">Discover Innovation</a>
+        <div class="hero-grid">
+            <div class="hero-content" id="main-content">
+                <p class="hero-eyebrow">75+ Years of Engineering Excellence</p>
+                <h1 class="hero-title">Engineering the Future of Global Mobility</h1>
+                <p class="hero-subtitle">From the highways of India to the markets of Africa, the Middle East, and beyond — Ashok Leyland moves the world with reliable, innovative, and sustainable commercial vehicles trusted across 50+ nations.</p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary btn-large">Explore Products</a>
+                    <a href="#innovation" class="btn btn-secondary btn-large">Discover Innovation</a>
+                </div>
             </div>
-            <div class="hero-trust" id="heroTrust">
-                <div class="trust-item" data-count="50" data-suffix="+">
-                    <span class="trust-number"><span class="count-target">0</span><span class="count-suffix">+</span></span>
-                    <span class="trust-label">Countries Served</span>
-                </div>
-                <div class="trust-item" data-count="220" data-suffix="K+">
-                    <span class="trust-number"><span class="count-target">0</span><span class="count-suffix">K+</span></span>
-                    <span class="trust-label">Vehicles Sold (FY26)</span>
-                </div>
-                <div class="trust-item" data-count="56947" data-suffix="Cr">
-                    <span class="trust-number"><span class="count-target">0</span><span class="count-suffix">Cr</span></span>
-                    <span class="trust-label">Consolidated Revenue</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-number">#4</span>
-                    <span class="trust-label">Global Bus Manufacturer</span>
-                </div>
+            <div class="hero-constellation" aria-hidden="true">
+                <canvas id="constellation-canvas"></canvas>
             </div>
         </div>
-        <div class="hero-scroll-indicator" aria-hidden="true">
-            <span class="scroll-text">Scroll</span>
-            <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
-                <rect x="1" y="1" width="14" height="22" rx="7" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none"/>
-                <circle cx="8" cy="8" r="2.5" fill="rgba(255,255,255,0.6)"/>
-            </svg>
+        <div class="hero-scroll" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="hero-scroll-line"></div>
         </div>
     </section>
 
-    <!-- ============ 3. SERVICES / PRODUCTS ============ -->
+    <!-- ============ SERVICES ============ -->
     <section class="section" id="services" aria-labelledby="services-title">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Our Portfolio</span>
-                <div class="section-title-wrapper">
-                    <h2 class="section-title" id="services-title">World-Class Commercial Vehicles</h2>
-                    <div class="title-underline"></div>
-                </div>
+                <h2 class="section-title" id="services-title">World-Class Commercial Vehicles</h2>
                 <p class="section-desc">From rugged defense trucks to zero-emission electric buses — our diversified portfolio serves every mobility need across road transport, logistics, defense, and public transit.</p>
             </div>
             <div class="cards-grid stagger-children">
@@ -189,15 +167,12 @@
         </div>
     </section>
 
-    <!-- ============ 4. WHY CHOOSE US ============ -->
-    <section class="section section-alt" id="why-us" aria-labelledby="why-title">
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section" id="why-us" aria-labelledby="why-title">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Why Ashok Leyland</span>
-                <div class="section-title-wrapper">
-                    <h2 class="section-title" id="why-title">Built on Trust, Driven by Innovation</h2>
-                    <div class="title-underline"></div>
-                </div>
+                <h2 class="section-title" id="why-title">Built on Trust, Driven by Innovation</h2>
                 <p class="section-desc">For over seven decades, Ashok Leyland has been the backbone of global transportation — delivering reliability, performance, and cutting-edge technology to customers across the world.</p>
             </div>
             <div class="benefits-grid stagger-children">
@@ -205,7 +180,6 @@
                     <div class="benefit-icon">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                             <path d="M16 4L4 12v8l12 8 12-8v-8L16 4z" stroke="currentColor" stroke-width="2" fill="none"/>
-                            <path d="M16 16l-6-4" stroke="currentColor" stroke-width="2"/>
                             <circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
                         </svg>
                     </div>
@@ -217,7 +191,6 @@
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                             <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
                             <path d="M16 10v6l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M26 6l2 2" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
                     <h3 class="benefit-title">Unmatched Scale & Reach</h3>
@@ -228,7 +201,6 @@
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                             <path d="M6 26V10l4-2 6-4 6 4 4 2v16H6z" stroke="currentColor" stroke-width="2" fill="none"/>
                             <path d="M16 4v8" stroke="currentColor" stroke-width="2"/>
-                            <path d="M10 14l6 4 6-4" stroke="currentColor" stroke-width="2" fill="none"/>
                         </svg>
                     </div>
                     <h3 class="benefit-title">Financial Strength</h3>
@@ -239,7 +211,6 @@
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                             <path d="M16 2v28" stroke="currentColor" stroke-width="2"/>
                             <path d="M4 16h24" stroke="currentColor" stroke-width="2"/>
-                            <path d="M16 16l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2"/>
                             <circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
                         </svg>
                     </div>
@@ -250,15 +221,12 @@
         </div>
     </section>
 
-    <!-- ============ 5. PROJECTS / PORTFOLIO ============ -->
+    <!-- ============ PROJECTS ============ -->
     <section class="section" id="global" aria-labelledby="projects-title">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Global Impact</span>
-                <div class="section-title-wrapper">
-                    <h2 class="section-title" id="projects-title">Delivering Excellence Worldwide</h2>
-                    <div class="title-underline"></div>
-                </div>
+                <h2 class="section-title" id="projects-title">Delivering Excellence Worldwide</h2>
                 <p class="section-desc">From landmark electric bus deployments to cutting-edge defence collaborations — our projects move people, goods, and nations forward.</p>
             </div>
             <div class="projects-grid stagger-children">
@@ -326,30 +294,23 @@
         </div>
     </section>
 
-    <!-- ============ 6. ABOUT ============ -->
-    <section class="section section-alt" id="about" aria-labelledby="about-title">
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
         <div class="container">
             <div class="about-grid">
                 <div class="about-content">
                     <span class="section-label">Our Story</span>
-                    <div class="section-title-wrapper">
-                        <h2 class="section-title" id="about-title">A Legacy of Moving Nations</h2>
-                        <div class="title-underline"></div>
-                    </div>
+                    <h2 class="section-title" id="about-title">A Legacy of Moving Nations</h2>
                     <p class="about-text">Incorporated in <strong>1948</strong> as Ashok Motors Limited, our journey began by assembling Austin cars in Ennore, Chennai. A strategic partnership with British Leyland transformed us into Ashok Leyland — a name that would become synonymous with commercial vehicle excellence in India and beyond.</p>
                     <p class="about-text">As the flagship of the <strong>Hinduja Group</strong>, we have pioneered innovation for over 75 years: India's first 13-ton truck, first multi-axle vehicle, first CNG bus, and first hybrid electric vehicle. Today, we are the <strong>second-largest CV manufacturer in India</strong> and the <strong>fourth-largest bus manufacturer in the world</strong>.</p>
                     <p class="about-text">Our philosophy — <em>"Koi Manzil Door Nahin"</em> (No Dream Too Far) — drives our commitment to engineering excellence, sustainability, and global mobility solutions.</p>
-
                     <div class="about-quote">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                            <path d="M10 8C6 8 4 11 4 14v6h6v-6H8c0-2 1-4 4-4v-2zm14 0c-4 0-6 3-6 6v6h6v-6h-2c0-2 1-4 4-4v-2z" fill="var(--color-plum-voltage)" opacity="0.3"/>
+                            <path d="M10 8C6 8 4 11 4 14v6h6v-6H8c0-2 1-4 4-4v-2zm14 0c-4 0-6 3-6 6v6h6v-6h-2c0-2 1-4 4-4v-2z" fill="#8052ff" opacity="0.3"/>
                         </svg>
-                        <blockquote>
-                            "Our strategic partnership with CALB is a significant step towards creating a localised battery supply chain in India to accelerate adoption of electric vehicles. A Global Centre of Excellence will be created to serve as a hub for research and development."
-                        </blockquote>
+                        <blockquote>"Our strategic partnership with CALB is a significant step towards creating a localised battery supply chain in India to accelerate adoption of electric vehicles. A Global Centre of Excellence will be created to serve as a hub for research and development."</blockquote>
                         <cite>— Shenu Agarwal, MD & CEO, Ashok Leyland</cite>
                     </div>
-
                     <div class="about-stats">
                         <div class="about-stat" data-count="1948">
                             <span class="about-stat-value"><span class="count-target">0</span></span>
@@ -369,28 +330,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="about-image-placeholder">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
-                             alt="Ashok Leyland global headquarters corporate building"
-                             loading="lazy"
-                            >
-                        <p class="about-image-caption">Global Headquarters, Chennai, India</p>
+                <figure class="about-visual">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Ashok Leyland global headquarters corporate building" loading="lazy">
+                        <figcaption>Global Headquarters, Chennai, India</figcaption>
                     </div>
-                </div>
+                </figure>
             </div>
         </div>
     </section>
 
-    <!-- ============ 7. MILESTONES TIMELINE ============ -->
+    <!-- ============ TIMELINE ============ -->
     <section class="section" id="timeline" aria-labelledby="timeline-title">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Our Journey</span>
-                <div class="section-title-wrapper">
-                    <h2 class="section-title" id="timeline-title">75+ Years of Breaking Barriers</h2>
-                    <div class="title-underline"></div>
-                </div>
+                <h2 class="section-title" id="timeline-title">75+ Years of Breaking Barriers</h2>
                 <p class="section-desc">From assembling cars in 1948 to pioneering electric mobility in 2026 — every milestone reflects our relentless pursuit of engineering excellence.</p>
             </div>
             <div class="timeline">
@@ -437,8 +392,8 @@
                         </div>
                     </div>
                     <div class="timeline-item right">
-                        <div class="timeline-dot timeline-dot-highlight"></div>
-                        <div class="timeline-card timeline-card-highlight">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
                             <span class="timeline-year">2026</span>
                             <h3 class="timeline-title">Historic Peak</h3>
                             <p class="timeline-desc">Record revenue of ₹56,947 Cr. Switch Mobility turns profitable with 1,530 e-buses. ₹5,000 Cr battery ecosystem announced. 220,437 vehicles sold.</p>
@@ -449,48 +404,25 @@
         </div>
     </section>
 
-    <!-- ============ 8. CTA ============ -->
+    <!-- ============ CTA ============ -->
     <section class="cta-section" id="innovation" aria-labelledby="cta-title">
         <div class="container cta-content">
-            <span class="cta-tagline">The Future of Mobility is Here</span>
+            <span class="cta-label">The Future of Mobility is Here</span>
             <h2 class="cta-title" id="cta-title">Ready to Drive with Ashok Leyland?</h2>
             <p class="cta-desc">Join 50+ countries and thousands of enterprises who trust Ashok Leyland for their commercial vehicle needs. From cutting-edge electric buses to rugged heavy-duty trucks — we have the solution for your journey.</p>
             <div class="cta-actions">
                 <a href="#contact" class="btn btn-primary btn-large">Contact Our Team</a>
                 <a href="#services" class="btn btn-secondary btn-large">Explore Products</a>
             </div>
-            <div class="cta-badges">
-                <span class="cta-badge">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                        <path d="M8 1l2 4 4.5.5-3.2 3.2L12 13l-4-2.5L4 13l.7-4.3L1.5 5.5 6 5l2-4z" fill="#22c55e"/>
-                    </svg>
-                    ISO 9001 Certified
-                </span>
-                <span class="cta-badge">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                        <path d="M8 1l2 4 4.5.5-3.2 3.2L12 13l-4-2.5L4 13l.7-4.3L1.5 5.5 6 5l2-4z" fill="#22c55e"/>
-                    </svg>
-                    BS VI / Euro 6 Compliant
-                </span>
-                <span class="cta-badge">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                        <path d="M8 1l2 4 4.5.5-3.2 3.2L12 13l-4-2.5L4 13l.7-4.3L1.5 5.5 6 5l2-4z" fill="#22c55e"/>
-                    </svg>
-                    75+ Years of Trust
-                </span>
-            </div>
         </div>
     </section>
 
-    <!-- ============ 9. CONTACT ============ -->
+    <!-- ============ CONTACT ============ -->
     <section class="section" id="contact" aria-labelledby="contact-title">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Get in Touch</span>
-                <div class="section-title-wrapper">
-                    <h2 class="section-title" id="contact-title">Connect with Ashok Leyland</h2>
-                    <div class="title-underline"></div>
-                </div>
+                <h2 class="section-title" id="contact-title">Connect with Ashok Leyland</h2>
                 <p class="section-desc">Have a question about our products, services, or investment opportunities? Our team is ready to assist you worldwide.</p>
             </div>
             <div class="contact-grid">
@@ -599,7 +531,7 @@
         </div>
     </section>
 
-    <!-- ============ 10. FOOTER ============ -->
+    <!-- ============ FOOTER ============ -->
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
